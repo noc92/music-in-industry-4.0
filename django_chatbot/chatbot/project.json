@@ -1,0 +1,63 @@
+[
+
+    {
+        "title": "Looking for a Piano Accompanist for Graduation Recital",
+        "description": "We are looking for a skilled pianist to accompany a graduation recital at Hanyang University. The performance will take place on 25/06/05 at 18:00. The repertoire includes a mix of classical and contemporary pieces. We are seeking someone who can rehearse in advance and perform on the recital day.",
+        "required" : "The ideal candidate should have strong piano skills, be comfortable with sight-reading, and have experience accompanying soloists. Reliability, musical sensitivity, and good communication are essential. Availability for at least one or two rehearsals before the recital is required."
+    },
+
+    {
+        "title": "Vocalist Wanted for Jazz Ensemble Recital",
+        "description": "We are forming a small jazz combo for a performance at a student recital on 25/06/15. Looking for a jazz vocalist comfortable with standards and improvisation.",
+        "required": "Must have basic jazz vocal training and experience performing with a live band. Ability to improvise (scat singing) is a plus."
+    },
+
+    {
+        "title": "Guitarist Needed for Pop Ballad Graduation Performance",
+        "description": "Seeking an acoustic guitarist for a vocal major’s graduation performance featuring pop ballads. Concert will be held on 25/06/20 in the university recital hall.",
+        "required": "Must be able to accompany vocals smoothly and follow dynamic cues. Experience playing live performances preferred."
+    },
+
+    {
+        "title": "Violinist Wanted for String Quartet (Classical Recital)",
+        "description": "We are forming a string quartet for a chamber music recital at Hanyang University. The event will take place on 25/06/23.",
+        "required": "Applicant must be able to read sheet music fluently and attend group rehearsals. Previous ensemble experience is highly desirable."
+    },
+
+    {
+        "title": "Piano Teacher Needed for Beginner Student (Short-Term)",
+        "description": "Looking for a piano teacher to give private lessons to a beginner-level student preparing for a university entrance exam. Lessons will take place from June to August, once or twice a week.",
+        "required": "Strong teaching skills, patience, and a good understanding of basic piano pedagogy required. Prior teaching experience preferred."
+    },
+
+    {
+        "title": "Session Drummer Wanted for Studio Recording",
+        "description": "Seeking a session drummer for recording a 3-track indie rock EP at a professional studio in Seoul. Recording dates are set for early July.",
+        "required": "Must have solid timing and experience with studio click tracks. Ability to adapt quickly and take feedback is important."
+    },
+
+    {
+        "title": "Cellist Needed for Graduation Recital (Contemporary Classical)",
+        "description": "We are looking for a cellist to perform a contemporary classical piece as part of a graduation recital. Performance will take place on 25/06/28.",
+        "required": "Must be able to read modern notation and interpret extended techniques. One rehearsal with composer required before performance."
+    },
+
+    {
+        "title": "Live Sound Engineer for Student Showcase",
+        "description": "A live sound engineer is needed for a student music showcase taking place on 25/07/01. Genres include pop, jazz, and classical.",
+        "required": "Basic experience with mixers, mics, and live sound equipment required. Must be available for soundcheck and performance."
+    },
+
+    {
+        "title": "Flutist Needed for French Repertoire Recital",
+        "description": "Looking for a flutist to join a duo recital featuring French impressionist works (Debussy, Fauré). Concert is scheduled for 25/06/18.",
+        "required": "Must be comfortable with technically demanding flute passages and able to rehearse twice before the performance."
+    },
+
+    {
+        "title": "Accompanist for Musical Theatre Vocalist",
+        "description": "Musical theatre singer is looking for a pianist to accompany a short solo performance at a student showcase on 25/06/22.",
+        "required": "Ability to play show tunes and follow tempo/rubato changes required. Prior experience in theatre accompaniment is a big plus."
+    }
+
+]

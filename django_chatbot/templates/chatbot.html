@@ -1,0 +1,33 @@
+{% extends 'chatbot3.html' %}
+
+{% block content %}
+<div class="chat-container">
+  <div class="card flex-grow-1">
+    <div class="card-header bg-primary text-white">JobLabs</div>
+    <div class="card-body messages-box">
+      <ul class="list-unstyled messages-list">
+        <li class="message received">
+          <div class="message-text">
+            <div class="message-sender">
+              <b>JobLabs</b>
+            </div>
+            <div class="message-content">
+              Hi {{user.username}}, who are you scouting for today?
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <form class="message-form" method="POST">
+    {% csrf_token %}
+    <div class="input-group">
+      <input type="text" class="form-control message-input" placeholder="Type your message...">
+      <div class="input-group-append">
+        <button type="submit" class="btn btn-primary btn-send">Send</button>
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JobLabs Results</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: radial-gradient(circle, #f2f2f2 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+
+    .container {
+      padding: 40px 60px;
+      position: relative;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .logo::before {
+      content: '🎵';
+      color: #f47959;
+      margin-right: 5px;
+    }
+
+    .profile-icon {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .heading {
+      text-align: center;
+      margin-top: 80px;
+      font-size: 24px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 50px;
+    }
+
+    .card {
+      width: 400px;
+      height: 300px;
+      border: 2px solid #f47959;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 10px;
+    }
+
+    .card:nth-child(3) {
+      border-color: #f47959;
+    }
+
+    .card-title {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .more-link {
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+      font-size: 14px;
+      color: black;
+      text-decoration: none;
+    }
+
+    .more-link::after {
+      content: '➤';
+      margin-left: 5px;
+    }
+
+    .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 0 10px;
+    }
+
+    .card-description, .card-required {
+    font-size: 13px;
+    color: #555;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    }
+
+    .card-description p,
+    .card-required p {
+    margin: 5px 0 0 0;
+    font-size: 13px;
+    line-height: 1.4;
+    }
+
+    .label {
+    font-weight: bold;
+    color: #f47959;
+    display: block;
+    margin-bottom: 4px;
+    }
+    
+    .back-button {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid #f47959;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background-color: white;
+    transition: background-color 0.2s, color 0.2s;
+    }
+
+    .back-button:hover {
+    background-color: #f47959;
+    color: white;
+    }
+
+
+    .card-back-button {
+    margin-top: auto;
+    margin-bottom: 15px;
+    padding: 6px 12px;
+    border: 1px solid #f47959;
+    border-radius: 6px;
+    background-color: white;
+    text-decoration: none;
+    color: #f47959;
+    font-size: 13px;
+    transition: background-color 0.2s, color 0.2s;
+    }
+
+    .card-back-button:hover {
+    background-color: #f47959;
+    color: white;
+    }
+
+
+    
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="logo">JobLabs</div>
+  <div class="profile-icon">👤</div>
+
+  <div class="heading"><b>Recommended Project:</b></div>
+
+  <div class="cards">
+    {% if response %}
+      <div class="card">
+        <div class="card-title">{{ response.title }}</div>
+        <div class="card-description">
+          <span class="label">📝 Description</span>
+          <p>{{ response.description }}</p>
+        </div>
+        <div class="card-required">
+          <span class="label">✅ Requirements</span>
+          <p>{{ response.required }}</p>
+        </div>
+        <a href="{% url 'contract' %}" class="card-back-button">Generate Contract</a>
+      </div>
+    {% else %}
+      <div class="card">
+        <div class="card-title">No result available.</div>
+      </div>
+    {% endif %}
+  </div>
+  <a href="{% url 'chatbot' %}" class="back-button">← Back to Search</a>
+
+  <a href="#" class="more-link">more</a>
+</div>
+
+
+</body>
+</html>

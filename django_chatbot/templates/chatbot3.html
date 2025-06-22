@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scouting Page</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: radial-gradient(circle, #f9f9f9 1px, transparent 1px);
+      background-size: 20px 20px;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .center-container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .music-icon {
+      font-size: 60px;
+      color: #f47959;
+      margin-bottom: 20px;
+    }
+
+    .headline {
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    .headline b {
+      font-weight: 700;
+    }
+
+    .search-box {
+      display: flex;
+      width: 60%;
+      max-width: 500px;
+      border: 2px solid #f47959;
+      border-radius: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .search-box input {
+      border: none;
+      flex: 1;
+      outline: none;
+      font-size: 16px;
+      background: transparent;
+    }
+
+    .search-box button {
+      background: none;
+      border: none;
+      color: #f47959;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .profile-icon,
+    .language-icon {
+      position: absolute;
+      top: 20px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .profile-icon {
+      right: 30px;
+    }
+
+    .language-icon {
+      left: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="center-container">
+  <div class="language-icon">🌐 </div>
+  <div class="profile-icon">👤</div>
+
+  <div class="music-icon">🎵</div>
+  <div class="music-icon"><b>JobLabs</b></div>
+  <div class="headline">
+    Hi <b>{{user.username}}</b>, who are <b>you</b> scouting for today?
+  </div>
+  <form class="search-box" method="POST">
+    {% csrf_token %}
+    <input type="text" name="message" placeholder="ex. project that fits to my job">
+    <button type="submit">🔍</button>
+  </form>
+  </form>
+</div>
+
+</body>
+</html>
